@@ -1,7 +1,7 @@
 .container {
   display: grid;
-  grid-template-columns: 160px 692px auto 180px;
-  grid-template-rows: 46px 58px auto 80px;
+  grid-template-columns: 146px 640px auto 190px;
+  grid-template-rows: 46px 57px 2000px 80px;
   grid-template-areas:
   "logo search . account"
   ". search-settings . ."
@@ -13,7 +13,7 @@
 #logo {
   grid-area: logo;
   align-self: center;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 #search {
@@ -26,11 +26,19 @@
   grid-area: account;
   justify-self: end;
   align-self: center;
-  margin-right: 25px;
+  margin-right: 28px;
+}
+
+#search-modes,
+#search-settings {
+  grid-area: search-settings;
+  margin: 0 8px 0 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 #search-settings {
-  grid-area: search-settings;
+  justify-content: flex-end;
 }
 
 #main {
@@ -65,21 +73,21 @@
   fill: currentColor;
 }
 .sign-button {
+  display: inline-block;
   font-family: 'Open Sans', sans-serif;
   background: #1a73e8;
   border: 1px solid transparent;
   font-size: 14px;
-  margin-left: 10px;
+  margin-left: 8px;
   min-width: 96px;
-  padding: 8px 25px;
+  padding: 9px 25px;
   text-align: center;
   vertical-align: middle;
-  -moz-border-radius: 4px;
   border-radius: 4px;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #fff;
   text-decoration: none;
+  letter-spacing: .25px;
 }
 .google-services {
   color: #5f6368;
@@ -88,4 +96,22 @@
   width: 40px;
   padding: 8px;
   vertical-align: middle;
+  cursor: pointer;
+}
+.search-mode,
+.search-setting {
+  text-decoration: none;
+  padding: 16px 12px 12px 10px;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 11px 1px 0;
+  color: #5f6368;
+}
+.current {
+  color: #1A73E8;
+  border-bottom: 3px solid #1A73E8;
+}
+.sep1 {
+  grid-area: 2 / 1 / 2 / 5;
+  border-bottom: 1px solid #ebebeb;
 }
