@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 146px 640px auto 190px;
+  grid-template-columns: 146px 645px auto 190px;
   grid-template-rows: 46px 57px 2000px 80px;
   grid-template-areas:
   "logo search . account"
@@ -30,7 +30,7 @@
 #search-modes,
 #search-settings {
   grid-area: search-settings;
-  margin: 0 5px 0 10px;
+  margin: 0 7px 0 9px;
   display: flex;
   justify-content: flex-start;
 }
@@ -49,11 +49,12 @@
 
 .search-input {
   height: 46px;
-  width: 100%;
+  width: 640px;
   font: 16px arial,sans-serif;
   border: solid 1px #dfe1e5;
   border-radius: 24px;
   padding: 0 50px 0 20px;
+  outline: none;
 }
 .search-input:hover,
 .search-input:focus {
@@ -70,6 +71,11 @@
   cursor: pointer;
   vertical-align: middle;
   fill: currentColor;
+  outline: none;
+}
+.search-button svg {
+  height: 24px;
+  width: 24px;
 }
 .sign-button {
   display: inline-block;
@@ -100,6 +106,7 @@
   padding: 8px;
   vertical-align: middle;
   cursor: pointer;
+  outline: none;
 }
 .google-services:hover {
   background-color: rgba(60,64,67,0.08);
