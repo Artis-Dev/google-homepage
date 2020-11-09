@@ -2,7 +2,7 @@
 
 Project of deconstructing and recreating **Google search results [page](https://www.google.com/search?q=build+this+webpage)** using only HTML and CSS.
 
-From The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css).
+From The Odin Project's [curriculum](https://www.theodinproject.com/courses/web-development-101/lessons/html-css).
 
 📸 **Screenshots:**
 
