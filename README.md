@@ -16,8 +16,8 @@ Recreated: [here](/extra/recreated.jpg)
 
 ### Technologies
 
-* CSS
 * HTML
+* CSS
 
 ### Tools
 
@@ -60,7 +60,6 @@ Recreated: [here](/extra/recreated.jpg)
   * google added some new content (videos suggestions, extra content for results, etc...);
   * constantly changing URL line (favicons, colors, position);
   * for sure will change something in the future.
-
 
 ## Author
 
