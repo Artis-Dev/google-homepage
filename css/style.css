@@ -366,6 +366,11 @@ td {
   line-height: 1.25;
 }
 
+.related-result img {
+  width: 72px;
+  height: 72px;
+}
+
 /* Feedback */
 
 .feedback {
